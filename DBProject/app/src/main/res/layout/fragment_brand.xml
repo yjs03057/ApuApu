@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_marginRight="@dimen/px_30"
+
+            android:background="@drawable/drag_down_fragment"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="@dimen/px_20"
+                android:layout_marginTop="@dimen/px_10"
+
+                android:text="브랜드 추천"
+                android:textSize="@dimen/px_50"
+                android:textColor="#000000"
+                android:fontFamily="@font/misang"
+                />
+
+            <LinearLayout
+                android:id="@+id/fragment_brand_cloth_top_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="@dimen/px_30"
+
+                    android:text="상의 :"
+                    android:textSize="@dimen/px_80"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/misang" />
+
+                <TextView
+                    android:id="@+id/fragment_brand_cloth_top_name_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/px_30"
+
+                    android:text="Default"
+                    android:textSize="@dimen/px_80"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/misang"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_brand_cloth_pants_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="@dimen/px_30"
+
+                    android:text="하의 :"
+                    android:textSize="@dimen/px_80"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/misang"/>
+
+                <TextView
+                    android:id="@+id/fragment_brand_cloth_pants_name_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/px_30"
+
+                    android:text="Default"
+                    android:textSize="@dimen/px_80"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/misang"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_brand_cloth_outer_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="@dimen/px_30"
+
+                    android:text="외투 :"
+                    android:textSize="@dimen/px_80"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/misang"/>
+
+                <TextView
+                    android:id="@+id/fragment_brand_cloth_outer_name_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/px_30"
+
+                    android:text="Default"
+                    android:textSize="@dimen/px_80"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/misang"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_brand_cloth_other_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="@dimen/px_30"
+
+                    android:text="기타 :"
+                    android:textSize="@dimen/px_80"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/misang"/>
+
+                <TextView
+                    android:id="@+id/fragment_brand_cloth_other_name_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:text="Default"
+                    android:textSize="@dimen/px_80"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/misang"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/px_100"
+            android:layout_height="@dimen/px_100"
+            android:layout_alignParentEnd="true"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/px_40"
+            android:layout_marginBottom="@dimen/px_20"
+            android:src="@drawable/indecater2" />
+
+
+
+</RelativeLayout>
+

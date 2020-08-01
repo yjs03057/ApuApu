@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_category">
+        <item></item>
+        <item>상의</item>
+        <item>하의</item>
+        <item>아우터</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="sub_category1">
+        <item>민소매</item>
+        <item>반팔</item>
+        <item>셔츠</item>
+        <item>원피스</item>
+        <item>브라우스</item>
+        <item>긴팔</item>
+        <item>니트</item>
+        <item>맨투맨</item>
+    </string-array>
+
+    <string-array name="sub_category2">
+        <item>반바지</item>
+        <item>치마</item>
+        <item>면바지</item>
+        <item>슬랙스</item>
+        <item>청바지</item>
+    </string-array>
+
+    <string-array name="sub_category3">
+        <item>가디건</item>
+        <item>후드집업</item>
+        <item>자켓</item>
+        <item>환절기코트</item>
+        <item>코트</item>
+        <item>헤비아우터</item>
+    </string-array>
+
+    <string-array name="sub_category4">
+        <item>방한용품</item>
+        <item>우산</item>
+    </string-array>
+
+    <string-array name="empty_category">
+    </string-array>
+
+</resources>

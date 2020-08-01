@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/regist_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/send_button"
+
+        android:layout_marginTop="@dimen/px_40"
+        android:layout_marginEnd="@dimen/px_40"
+        android:layout_gravity="right"
+
+        android:fontFamily="@font/misang"
+        android:textSize="@dimen/px_80"
+        android:text="회원가입" />
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="@dimen/px_800"
+        android:layout_height="@dimen/px_800"
+        android:src="@drawable/icon_logo"
+
+        android:layout_marginTop="@dimen/px_30"
+        android:layout_gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+
+        android:layout_marginTop="@dimen/px_80"
+        >
+
+        <EditText
+            android:id="@+id/login_id_edittext"
+            android:layout_width="@dimen/px_600"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+
+            android:theme="@style/EditTheme"
+            android:hint="Id"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+
+        android:layout_marginTop="@dimen/px_30"
+        >
+
+
+        <EditText
+            android:id="@+id/login_pw_edittext"
+            android:layout_width="@dimen/px_600"
+            android:layout_height="wrap_content"
+
+            android:theme="@style/EditTheme"
+            android:inputType="textPassword"
+            android:hint="Password"
+
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/login_worring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_horizontal"
+
+
+        android:textSize="@dimen/px_30"
+        android:textColor="#ff0000"
+
+        />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="@dimen/px_500"
+        android:layout_height="wrap_content"
+        android:background="@drawable/send_button"
+
+        android:layout_marginTop="@dimen/px_50"
+        android:layout_gravity="center_horizontal"
+
+        android:fontFamily="@font/misang"
+        android:textSize="@dimen/px_100"
+        android:text="로그인" />
+
+
+
+
+</LinearLayout>

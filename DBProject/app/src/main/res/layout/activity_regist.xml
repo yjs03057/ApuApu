@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="@dimen/px_30"
+        android:layout_marginTop="@dimen/px_30"
+
+        android:text="회원가입"
+        android:textSize="@dimen/px_80"
+        android:fontFamily="@font/misang"
+        />
+
+    <ImageView
+        android:id="@+id/regist_logo"
+        android:layout_width="@dimen/px_500"
+        android:layout_height="@dimen/px_500"
+
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginTop="@dimen/px_100"
+        android:src="@drawable/icon_logo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+
+        android:layout_marginTop="@dimen/px_80">
+
+
+        <EditText
+            android:id="@+id/regist_id_edittext"
+            android:layout_width="@dimen/px_600"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+
+            android:theme="@style/EditTheme"
+            android:hint="Id"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_150"
+
+        android:layout_marginTop="@dimen/px_40">
+
+
+        <EditText
+            android:id="@+id/regist_pw_edittext"
+            android:layout_width="@dimen/px_600"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+
+            android:theme="@style/EditTheme"
+            android:hint="Password" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/px_80">
+
+        <TextView
+            android:id="@+id/sex_choic"
+            android:layout_width="@dimen/px_600"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+
+            android:text="성별"
+            android:fontFamily="@font/misang"
+            android:textSize="@dimen/px_80" />
+
+        <LinearLayout
+            android:id="@+id/regist_sex_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_alignStart="@+id/sex_choic"
+            android:layout_below="@+id/sex_choic"
+            >
+
+            <Button
+                android:id="@+id/regist_men_button"
+                android:background="@drawable/choice_button"
+                android:layout_width="@dimen/px_290"
+                android:layout_height="@dimen/px_120"
+
+                android:text="남자"
+                android:textSize="@dimen/px_100"
+                android:fontFamily="@font/misang"
+
+                />
+
+            <View
+                android:layout_width="@dimen/px_20"
+                android:layout_height="@dimen/px_120"
+                android:background="#ffffffff"
+                />
+            <Button
+                android:id="@+id/regist_women_button"
+                android:background="@drawable/choice_button"
+                android:layout_width="@dimen/px_290"
+                android:layout_height="@dimen/px_120"
+
+                android:text="여자"
+                android:textSize="@dimen/px_100"
+                android:fontFamily="@font/misang"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/regist_worring_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+
+            android:textSize="@dimen/px_30"
+            android:textColor="#ff0000"/>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:background="@drawable/choice_button"
+            android:layout_width="@dimen/px_330"
+            android:layout_height="@dimen/px_130"
+
+            android:layout_marginEnd="@dimen/px_30"
+            android:layout_marginBottom="@dimen/px_30"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+
+            android:text="제출"
+            android:textSize="@dimen/px_80"
+            android:fontFamily="@font/misang"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

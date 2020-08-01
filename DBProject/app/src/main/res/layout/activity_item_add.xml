@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:background="@android:color/transparent"
+            android:baselineAlignBottom="false"
+            android:src="@drawable/previous" />
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/cloth_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="169dp"
+        android:text="옷 이름: "
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_x="163dp"
+        android:layout_y="174dp" />
+
+    <TextView
+        android:id="@+id/main_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="290dp"
+        android:text="대분류: "
+        android:textSize="40dp" />
+
+    <Spinner
+        android:id="@+id/spinner_main_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_x="170dp"
+        android:layout_y="306dp" />
+
+    <TextView
+        android:id="@+id/sub_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="410dp"
+        android:text="소분류: "
+        android:textSize="40dp" />
+
+    <Spinner
+        android:id="@+id/spinner_sub_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_x="169dp"
+        android:layout_y="423dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="156dp"
+        android:layout_y="576dp"
+        android:text="추가"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="604dp" />
+
+</AbsoluteLayout>

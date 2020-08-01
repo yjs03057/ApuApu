@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/px_30"
+        android:layout_marginRight="@dimen/px_30"
+
+        android:background="@drawable/drag_down_fragment"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/px_20"
+            android:layout_marginTop="@dimen/px_10"
+
+            android:fontFamily="@font/misang"
+            android:text="내 옷장"
+            android:textColor="#000000"
+            android:textSize="@dimen/px_50" />
+
+        <TextView
+            android:id="@+id/fragment_detail_user_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_horizontal"
+
+            android:fontFamily="@font/misang"
+            android:text="오늘의 날씨는 default"
+            android:textColor="#000000"
+            android:textSize="@dimen/px_80" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_detail_user_cloth_top_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/top_icon"
+                android:layout_width="@dimen/px_150"
+                android:layout_height="@dimen/px_150"
+                android:layout_marginLeft="@dimen/px_40"
+
+                android:src="@drawable/icon_top" />
+
+            <TextView
+                android:id="@+id/top_text"
+                android:layout_width="@dimen/px_150"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/top_icon"
+                android:layout_alignStart="@+id/top_icon"
+
+                android:fontFamily="@font/misang"
+                android:gravity="center_horizontal"
+                android:text="상의"
+                android:textColor="#000000"
+                android:textSize="@dimen/px_60" />
+
+            <TextView
+                android:id="@+id/top_com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_toRightOf="@+id/top_icon"
+
+                android:text=":"
+                android:textColor="#000000"
+                android:textSize="@dimen/px_100" />
+
+            <TextView
+                android:id="@+id/fragment_detail_user_cloth_top_name_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_150"
+
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_toRightOf="@+id/top_com"
+
+                android:fontFamily="@font/misang"
+                android:gravity="center_vertical"
+                android:text="Default"
+                android:textColor="#000000"
+                android:textSize="@dimen/px_80" />
+
+            <TextView
+                android:id="@+id/fragment_detail_user_top_main_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/top_icon"
+                android:layout_alignStart="@+id/fragment_detail_user_cloth_top_name_textview"
+
+                android:fontFamily="@font/misang"
+                android:text="#defalult"
+                android:textSize="@dimen/px_60" />
+
+            <TextView
+                android:id="@+id/fragment_detail_user_top_sub_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/fragment_detail_user_top_main_category"
+                android:layout_alignStart="@+id/fragment_detail_user_top_main_category"
+
+                android:fontFamily="@font/misang"
+                android:text="#defalult"
+                android:textSize="@dimen/px_60" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_detail_user_cloth_pants_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/pants_icon"
+                android:layout_width="@dimen/px_150"
+                android:layout_height="@dimen/px_150"
+                android:layout_marginLeft="@dimen/px_40"
+
+                android:src="@drawable/icon_pants" />
+
+            <TextView
+                android:id="@+id/pants_text"
+                android:layout_width="@dimen/px_150"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/pants_icon"
+                android:layout_alignStart="@+id/pants_icon"
+
+                android:fontFamily="@font/misang"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:text="하의"
+                android:textSize="@dimen/px_60" />
+
+            <TextView
+                android:id="@+id/pants_com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_toRightOf="@+id/pants_icon"
+
+                android:text=":"
+                android:textColor="#000000"
+                android:textSize="@dimen/px_100" />
+
+            <TextView
+                android:id="@+id/fragment_detail_user_cloth_pants_name_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_150"
+
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_toRightOf="@+id/pants_com"
+
+                android:fontFamily="@font/misang"
+                android:gravity="center_vertical"
+                android:text="Default"
+                android:textColor="#000000"
+                android:textSize="@dimen/px_80" />
+
+            <TextView
+                android:id="@+id/fragment_detail_user_pants_main_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/pants_icon"
+                android:layout_alignStart="@+id/fragment_detail_user_cloth_pants_name_textview"
+
+                android:fontFamily="@font/misang"
+                android:text="#defalult"
+                android:textSize="@dimen/px_60" />
+
+            <TextView
+                android:id="@+id/fragment_detail_user_pants_sub_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/fragment_detail_user_pants_main_category"
+                android:layout_alignStart="@+id/fragment_detail_user_pants_main_category"
+
+                android:fontFamily="@font/misang"
+                android:text="#defalult"
+                android:textSize="@dimen/px_60" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/fragment_detail_user_cloth_outer_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/outer_icon"
+                android:layout_width="@dimen/px_150"
+                android:layout_height="@dimen/px_150"
+                android:layout_marginLeft="@dimen/px_40"
+
+                android:src="@drawable/icon_outer" />
+
+            <TextView
+                android:id="@+id/outer_text"
+                android:layout_width="@dimen/px_150"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/outer_icon"
+                android:layout_alignStart="@+id/outer_icon"
+
+                android:fontFamily="@font/misang"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:text="아우터"
+                android:textSize="@dimen/px_60" />
+
+            <TextView
+                android:id="@+id/outer_com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_toRightOf="@+id/outer_icon"
+
+                android:text=":"
+                android:textColor="#000000"
+                android:textSize="@dimen/px_100" />
+
+            <TextView
+                android:id="@+id/fragment_detail_user_cloth_outer_name_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_150"
+
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_toRightOf="@+id/outer_com"
+
+                android:fontFamily="@font/misang"
+                android:gravity="center_vertical"
+                android:text="Default"
+                android:textColor="#000000"
+                android:textSize="@dimen/px_80" />
+
+            <TextView
+                android:id="@+id/fragment_detail_user_outer_main_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/outer_icon"
+                android:layout_alignStart="@+id/fragment_detail_user_cloth_outer_name_textview"
+
+                android:fontFamily="@font/misang"
+                android:text="#defalult"
+                android:textSize="@dimen/px_60" />
+
+            <TextView
+                android:id="@+id/fragment_detail_user_outer_sub_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/fragment_detail_user_outer_main_category"
+                android:layout_alignStart="@+id/fragment_detail_user_outer_main_category"
+
+                android:fontFamily="@font/misang"
+                android:text="#defalult"
+                android:textSize="@dimen/px_60" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_detail_user_cloth_other_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/other_icon"
+                android:layout_width="@dimen/px_150"
+                android:layout_height="@dimen/px_150"
+                android:layout_marginLeft="@dimen/px_40"
+
+                android:src="@drawable/icon_other" />
+
+            <TextView
+                android:id="@+id/other_text"
+                android:layout_width="@dimen/px_150"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/other_icon"
+                android:layout_alignStart="@+id/other_icon"
+
+                android:fontFamily="@font/misang"
+                android:gravity="center_horizontal"
+                android:text="기타"
+                android:textColor="#000000"
+                android:textSize="@dimen/px_60" />
+
+            <TextView
+                android:id="@+id/other_com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_toRightOf="@+id/other_icon"
+
+                android:text=":"
+                android:textColor="#000000"
+                android:textSize="@dimen/px_100" />
+
+            <TextView
+                android:id="@+id/fragment_detail_user_cloth_other_name_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_150"
+
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_toRightOf="@+id/other_com"
+
+                android:fontFamily="@font/misang"
+                android:gravity="center_vertical"
+                android:text="Default"
+                android:textColor="#000000"
+                android:textSize="@dimen/px_80" />
+
+            <TextView
+                android:id="@+id/fragment_detail_user_other_main_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/other_icon"
+                android:layout_alignStart="@+id/fragment_detail_user_cloth_other_name_textview"
+
+                android:fontFamily="@font/misang"
+                android:text="#defalult"
+                android:textSize="@dimen/px_60" />
+
+            <TextView
+                android:id="@+id/fragment_detail_user_other_sub_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/fragment_detail_user_other_main_category"
+                android:layout_alignStart="@+id/fragment_detail_user_other_main_category"
+
+                android:fontFamily="@font/misang"
+                android:text="#defalult"
+                android:textSize="@dimen/px_60" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/px_100"
+                android:layout_height="@dimen/px_100"
+                android:layout_alignParentEnd="true"
+
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="@dimen/px_40"
+                android:layout_marginBottom="@dimen/px_20"
+                android:src="@drawable/indecater1" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
